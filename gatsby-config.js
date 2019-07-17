@@ -3,8 +3,10 @@ module.exports = {
     title: `Level Up Blog`,
     description: `A new blog!`,
     author: `@gatsbyjs`,
+    siteUrl: `https://agitated-williams-4b157e.netlify.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -62,6 +64,7 @@ module.exports = {
         name: `images`
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`
   ],
 }
